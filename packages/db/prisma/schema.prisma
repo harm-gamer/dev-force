@@ -71,7 +71,7 @@ model ContestSubmission {
 model Submissions {
   id                            String       @id       @default(uuid())
   submission                    String
-  challengeId   String
+  challengeId                   String
   userId                        String
   user                          User                        @relation(fields: [userId], references: [id])
   points                        Int
