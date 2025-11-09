@@ -38,6 +38,7 @@ router.post("/signup", async (req,res) =>{
         }
     })
     return res.status(201).json({user : newUser});
+    
 })
 
 router.post("/login",(req,res) =>{
